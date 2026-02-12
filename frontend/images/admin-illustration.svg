@@ -1,0 +1,29 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8f9fa"/>
+  
+  <!-- Dashboard representation -->
+  <rect x="20" y="30" width="120" height="80" fill="#667eea" rx="5"/>
+  <rect x="30" y="40" width="100" height="10" fill="white" opacity="0.8"/>
+  <rect x="30" y="55" width="60" height="8" fill="white" opacity="0.6"/>
+  <rect x="30" y="67" width="80" height="8" fill="white" opacity="0.6"/>
+  <rect x="30" y="79" width="70" height="8" fill="white" opacity="0.6"/>
+  
+  <!-- Chart bars -->
+  <rect x="40" y="100" width="15" height="30" fill="#764ba2"/>
+  <rect x="60" y="90" width="15" height="40" fill="#667eea"/>
+  <rect x="80" y="85" width="15" height="45" fill="#764ba2"/>
+  <rect x="100" y="95" width="15" height="35" fill="#667eea"/>
+  
+  <!-- Person silhouette -->
+  <circle cx="200" cy="60" r="15" fill="#333"/>
+  <path d="M185 80 Q200 75 215 80 L220 120 L210 140 L190 140 L180 120 Z" fill="#333"/>
+  
+  <!-- Pointing hand -->
+  <path d="M215 100 L225 95 L230 100 L228 110 L220 115 L215 110 Z" fill="#333"/>
+  
+  <!-- Settings gear -->
+  <circle cx="250" cy="150" r="20" fill="none" stroke="#667eea" stroke-width="3"/>
+  <circle cx="250" cy="150" r="8" fill="#667eea"/>
+  <path d="M250 130 L250 135 M250 165 L250 170 M230 150 L235 150 M265 150 L270 150" stroke="#667eea" stroke-width="3"/>
+</svg>
