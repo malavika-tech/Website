@@ -1,0 +1,38 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8f9fa"/>
+  
+  <!-- Phone representation -->
+  <rect x="180" y="40" width="80" height="120" fill="#11998e" rx="10"/>
+  <rect x="185" y="50" width="70" height="90" fill="white"/>
+  
+  <!-- Workout plan lines -->
+  <rect x="190" y="60" width="60" height="5" fill="#11998e" opacity="0.6"/>
+  <rect x="190" y="70" width="50" height="5" fill="#11998e" opacity="0.4"/>
+  <rect x="190" y="80" width="55" height="5" fill="#11998e" opacity="0.5"/>
+  <rect x="190" y="90" width="45" height="5" fill="#11998e" opacity="0.4"/>
+  
+  <!-- Calendar representation -->
+  <rect x="190" y="100" width="60" height="35" fill="#38ef7d" opacity="0.3" rx="3"/>
+  <circle cx="200" cy="110" r="3" fill="#11998e"/>
+  <circle cx="210" cy="110" r="3" fill="#11998e"/>
+  <circle cx="220" cy="110" r="3" fill="#11998e"/>
+  <circle cx="230" cy="110" r="3" fill="#11998e"/>
+  <circle cx="240" cy="110" r="3" fill="#11998e"/>
+  
+  <!-- Person 1 (trainer) -->
+  <circle cx="80" cy="60" r="12" fill="#333"/>
+  <path d="M68 75 Q80 72 92 75 L95 110 L85 125 L75 125 L65 110 Z" fill="#11998e"/>
+  
+  <!-- Person 2 (client) -->
+  <circle cx="130" cy="70" r="12" fill="#333"/>
+  <path d="M118 85 Q130 82 142 85 L145 120 L135 135 L125 135 L115 120 Z" fill="#38ef7d"/>
+  
+  <!-- Stopwatch icon -->
+  <circle cx="50" cy="150" r="15" fill="none" stroke="#11998e" stroke-width="3"/>
+  <circle cx="50" cy="150" r="2" fill="#11998e"/>
+  <path d="M50 135 L50 140 M50 160 L50 165 M35 150 L40 150 M60 150 L65 150" stroke="#11998e" stroke-width="2"/>
+  
+  <!-- Leaf icon -->
+  <path d="M250 150 Q260 140 270 145 Q265 155 250 160 Q240 155 250 150" fill="#38ef7d"/>
+</svg>

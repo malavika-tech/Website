@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFit Online Fitness Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>GetFit</span>
+            </div>
+            <div class="system-name">
+                <h1>Online Fitness Management System</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="role-selection">
+            <h2>Are you an <span class="highlight">Admin</span>, <span class="highlight">Trainer</span>, or <span class="highlight">Member</span>?</h2>
+            <p>Select your role to continue to the dashboard</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="role-card admin-card">
+                <div class="card-icon">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <div class="card-image">
+                    <img src="images/admin-illustration.svg" alt="Admin Dashboard">
+                </div>
+                <h3>Admin</h3>
+                <p>Manage the entire fitness platform</p>
+                <button class="btn btn-admin">Select</button>
+            </div>
+
+            <div class="role-card trainer-card">
+                <div class="card-icon">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <div class="card-image">
+                    <img src="images/trainer-illustration.svg" alt="Trainer Dashboard">
+                </div>
+                <h3>Trainer</h3>
+                <p>Create and manage workout plans</p>
+                <button class="btn btn-trainer">Select</button>
+            </div>
+
+            <div class="role-card member-card">
+                <div class="card-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="card-image">
+                    <img src="images/member-illustration.svg" alt="Member Dashboard">
+                </div>
+                <h3>Member</h3>
+                <p>Track workouts, diet plans, and progress</p>
+                <button class="btn btn-member">Select</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
