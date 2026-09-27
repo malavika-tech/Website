@@ -1,7 +1,10 @@
 <?php
-require_once __DIR__ . '/../../config.php';
 
-$_SESSION = [];
-session_destroy();
+use App\Services\AuthService;
 
-echo json_encode(['ok' => true]);
+require_once __DIR__ . '/../../helpers.php';
+
+$authService = new AuthService();
+$authService->logout();
+
+json_ok();

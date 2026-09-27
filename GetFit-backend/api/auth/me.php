@@ -1,11 +1,10 @@
 <?php
+
+use App\Services\AuthService;
+
 require_once __DIR__ . '/../../helpers.php';
 
-if (empty($_SESSION['user_id'])) {
-    json_error('Not logged in', 401);
-}
+$authService = new AuthService();
+$user = $authService->getCurrentUser();
 
-json_ok([
-    'id'   => $_SESSION['user_id'],
-    'role' => $_SESSION['role'],
-]);
+json_ok($user);

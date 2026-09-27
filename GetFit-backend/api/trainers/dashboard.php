@@ -1,15 +1,16 @@
 <?php
+
+use App\Services\TrainerService;
+
 require_once __DIR__ . '/../../helpers.php';
 
 $me = require_role('trainer');
-$db = get_db();
 
-$assigned = $db->prepare('SELECT COUNT(*) FROM trainer_assignments WHERE trainer_id = ?');
-$assigned->execute([$me['id']]);
-$count = (int)$assigned->fetchColumn();
+if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+    json_error('Method not allowed', 405);
+}
 
-json_ok([
-    'assignedMembers' => $count,
-    'todaysSessions'  => 0,
-    'goalsAchieved'   => 0,
-]);
+$trainerService = new TrainerService();
+$dashboard = $trainerService->getDashboard((int)$me['id']);
+
+json_ok($dashboard);
